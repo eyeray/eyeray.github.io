@@ -1,10 +1,11 @@
 *{margin: 0;}
 body{
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
-    background: url("../images/leading24px.png") 0 0 repeat;
+
+    font-size:16px;
+    background: url("../images/leading24px.png") 0 0 repeat,
+                url("../images/letterspacing_compare2_72dpi.jpg") -68px 0;
 }
+
 
 p.letterSpacingTest1{
     font-family: "Spoqa Han Sans";
@@ -14,7 +15,7 @@ p.letterSpacingTest1{
     text-align: justify;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: ; -0.005em;/*-5/1000*/
+    letter-spacing:-0.005em;/*-5/1000*/
 
 }
 p.letterSpacingTest2{
@@ -25,6 +26,5 @@ p.letterSpacingTest2{
     text-align: justify;
     font-size: 16px;
     line-height: 1.5;
-
     letter-spacing: -0.1em;
 }
