@@ -2,8 +2,8 @@
 body{
 
     font-size:16px;
-    background: url("../images/leading24px.png") 0 0 repeat,
-                url("../images/letterspacing_compare2_72dpi.jpg") -68px 0;
+    background: url("../images/leading24px.png") 0 0 repeat;
+
 }
 
 
@@ -12,7 +12,7 @@ p.letterSpacingTest1{
     margin-top: 0;
     margin-bottom: 1.5em;
     color:#000;
-    text-align: justify;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing:-0.005em;/*-5/1000*/
@@ -23,7 +23,7 @@ p.letterSpacingTest2{
     margin-top: 0;
     margin-bottom: 1.5em;
     color:#000;
-    text-align: justify;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.1em;
