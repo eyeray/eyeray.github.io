@@ -1,11 +1,9 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-
 html{
     font-size: 10px;
 }
 body{
     margin: 0;
-    font-family: "Noto Sans KR", "sans-serif";
+    font-family: "Noto Sans Korean", "sans-serif";
     /*루트(html)을 기준으로 root equal M사이즈를 적용한다.*/
     /*html의 텍스트 크기를 10px로 정해놓은 이유는 곱하기 편하게 하기 위해서이다.*/
     /*body의 글자크기는 16px과 같다.*/
