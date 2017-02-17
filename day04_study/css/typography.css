@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6{
     color:#666666;
     margin-top:0;
     margin-bottom: 2.4rem;
-    letter-spacing:-0.0885em;/*(70+18.5/1000)*/;
+    letter-spacing:-0.0065em;/*(-25+18.5/1000)*/;
     font-weight: 700;
 
 }
