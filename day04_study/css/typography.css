@@ -21,7 +21,7 @@ body{
     width:85.9375%;
     margin-left: auto;
     margin-right: auto;
-    background:rgba(221,221,221,0.5);
+    /*background:rgba(221,221,221,0.5);*/
 }
 
 /*본문 디자인*/
@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6{
     color:#666666;
     margin-top:0;
     margin-bottom: 2.4rem;
-    letter-spacing:-0.0065em;/*(-25+18.5/1000)*/;
+    letter-spacing:-0.0315em;/*(-50+18.5/1000)*/;
     font-weight: 700;
 
 }
