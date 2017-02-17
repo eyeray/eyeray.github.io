@@ -1,2 +1,3 @@
 # eyeray.github.io
-## 프론트캠프 1강 환경설정
+## typography system
+<img src="https://github.com/eyeray/eyeray.github.io/blob/master/day04_study/images/UI_kit_eyeray_upgrade0217.jpg?raw=true" alt="typography system">
