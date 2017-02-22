@@ -4,71 +4,92 @@ html{
     font-size:10px;
     font-family: "Spoqa Han Sans","sans serif";
     /*700,400,300,100*/
+    /*text-shadow: 0 0 0.1px rgba(0,0,0,1);*/
 }
 
 body{
 
     font-size:1.4rem;
     color:rgba(51,55,65,1);
-    line-height: 1.5; /*21/14 줄간격 21px 글자크기 14px*/
+    vertical-align: top;
+    /*line-height: 1.5; /*21/14 줄간격 21px 글자크기 14px*/
     letter-spacing:-0.0385em;/*-20==> -((20+18.5)/1000)*/
+
 }
 
+body:hover{
+    background: url("../images/leading_21px.png") 0 0 repeat;
+}
+
+
 h1,h2,h3,h4,h5,h6{
-    text-align: center;
-    margin-top:0;
-    margin-bottom: 2.1rem;
+    margin-top: 0;
     letter-spacing:-0.0315em;/*(-50+18.5/1000)*/;
     font-weight: 700;
-
 }
 h1{
     font-size:5.463rem;
     font-weight: 300;
+    line-height: 6.3rem;
 }
 h2{
     font-size:4.040475rem;
+    line-height: 4.2rem;
 }
 h3{
-    text-align: left;
     font-size:3.169rem;
     font-weight: 400;
+    line-height: 4.2rem;
 }
 h4{
     font-size:2.34345rem;
+    font-weight: 400;
+    line-height: 4.2;
 }
 h5{
+    color: #787f94;
     font-size:1.838rem;
+    font-weight: 700;
+    line-height: 2.1rem;
 }
 h6{
     font-size:1.563rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+}
+
+.heading_center{
+    text-align: center;
+}
+.heading_left{
+    text-align:left;
 }
 
 p{
-    margin-top: 0;
     margin-bottom: 2.1rem;
+    text-align: justify;
     font-weight: 500;
+    line-height: 2.1rem;
 }
 
 .container{
     width:960px;
-    margin-top: 8.4rem;
     margin-left:auto;
     margin-right: auto;
 }
 
-header>img{
+.main_img{
     display: block;
     width:819px;
     border:none;
     vertical-align: top;
-    margin: 0 auto 4.2rem;
+    margin: 0 auto;
 }
-ol{
-
+ol,ul{
+    margin: 0;
+    padding-left:1.4rem;
 }
-ol,li{
-
+ol li{
     margin-bottom: 2.1rem;
 }
 li h6{
@@ -76,5 +97,67 @@ li h6{
     text-align: left;
 }
 li p{
+    margin-left: -1.4rem;
+    margin-bottom: 4.2rem;
+}
+/* 공간 x1 */
+.push {
+  margin-bottom: 2.1rem;
+}
 
+.push-top{
+    margin-top: 8.4rem;
+}
+/* 공간 제거 */
+.push-none {
+  margin-bottom: 0;
+}
+
+/* 공간 x2 */
+.push-double {
+  margin-bottom: 4.2rem;
+}
+.push-triple {
+  margin-bottom: 6.3rem;
+}
+
+/* 공간 1/2x */
+.push-half {
+  margin-bottom: 1.05rem;
+}
+dl{
+    margin: 0;
+}
+dt{
+    font-weight: 700;
+}
+dt,dd{
+    margin-left: 0;
+    line-height: 2.1rem;
+
+}
+dt::before{
+    font-weight: 700;
+    content: "Q. ";
+}
+
+dd::before{
+    content: "A. "
+}
+
+a:link,visited{
+    color: #333741;
+    text-decoration: none;
+}
+a:hover{
+    color:#ff9900;
+}
+.asan_hospital{
+    text-align: right;
+    font-weight: 400;
+
+}
+.navi{
+    font-weight: 300;
+    line-height: 2.1rem;
 }
