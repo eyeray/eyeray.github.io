@@ -54,10 +54,11 @@ h4{
     /*line-height: 1.673892857142857;*/
 }
 h5{
+    vertical-align: middle;
     color: #787f94;
     font-size:1.838rem;
     font-weight: 700;
-    /*line-height: 1.312857142857143;*/
+    line-height: 1.312857142857143;
 }
 h6{
     margin: 0;
