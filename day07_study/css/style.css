@@ -1,0 +1,204 @@
+
+/*!  style.css @ eyeray 20170224 */
+@charset "UTF-8";
+
+html{
+    /*rem단위의 기준값*/
+    font-size: 10px;
+    /*height: 100%;*/
+}
+body{
+    /*height: 100%;*/
+    margin: 0;
+    min-height: 100vh;
+
+
+    /*본문디자인 상속*/
+    font-family: "Spoqa Han Sans", "Sans Serif";
+    font-size: 1.4rem;
+    line-height: 1.5;
+    /*css는 상속이라는 매커니즘을 사용하다 보니 단위를 붙이면 버그가 발생*/
+    color: #333741;
+    /*-20/1000*/
+    letter-spacing: -0.02em;
+
+    /*font: [응용] [두께] [기울] size[/행간]  family */
+    /*font:1.4rem/1.5 "Spoqa Han Sans"*/
+    /*font-variant:*/
+
+}
+
+body:hover{
+    background: url("../images/leading_21px.png") 0 0 repeat;
+}
+
+/* 제목 단락 공통 디자인*/
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    /*21/14*/
+    margin-bottom: 2.1rem;
+
+    /*margin-bottom: 2.1rem;*/
+    /*font-weight: 500;
+    line-height: 2.1rem;*/
+}
+
+h1,h2,h3,h4{
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+h5,h6{
+    font-weight: normal;
+    line-height: 2.1rem;
+}
+h1{
+    font-size:5.463rem;
+    line-height: 6.3rem;
+}
+
+h3{
+    font-size:3.169rem;
+    font-weight: 300;
+    line-height: 4.2rem;
+    letter-spacing: -0.05em;
+}
+
+h5{
+    color: #787f94;
+    font-size:1.838rem;
+    line-height: 2.1rem;
+}
+h6{
+    font-size:1.563rem;
+    color: #47494e;
+    line-height: 2.1rem;
+}
+
+
+.heading_center{
+    text-align: center;
+}
+.heading_left{
+    text-align:left;
+}
+
+p{
+    margin-bottom: 2.1rem;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 2.1rem;
+}
+
+.container{
+    width:60.02928257686676%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.main_img{
+    display: block;
+    width:819px;/*819px/960px*/
+    border:none;
+    vertical-align: top;
+    margin: 0 auto;
+}
+ol,ul{
+    /*웹브라우저의 기본 스타일 (user Agent Style) 제거*/
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+li{
+    /*상하마진은 겹친다 큰값으로*/
+    margin-bottom: 4.2rem;
+
+}
+li h6{
+    color:#787f94;
+    text-align: left;
+}
+
+/* 공간 x1 */
+.push {
+  margin-bottom: 2.1rem;
+}
+
+.push-top{
+    margin-top: 8.4rem;
+}
+/* 공간 제거 */
+.push-none {
+  margin-bottom: 0;
+}
+
+/* 공간 x2 */
+.push-double {
+  margin-bottom: 4.2rem;
+}
+.push-triple {
+  margin-bottom: 6.3rem;
+}
+
+/* 공간 1/2x */
+.push-half {
+  margin-bottom: 1.05rem;
+}
+dl{
+    margin: 0;
+}
+dt{
+    font-weight: 700;
+}
+dt,dd{
+    margin-left: 0;
+    line-height: 2.1rem;
+
+}
+dt::before{
+    font-weight: 700;
+    content: "Q. ";
+}
+
+dd::before{
+    content: "A. "
+}
+/*하이퍼링크디자인*/
+a[href]{
+    color:#3292a7;
+    text-decoration: none;
+}
+/*상태디자인
+    기본상태 normal state : link
+    방문한 상태  visited state : visited
+    마우스가 올라간 상태 hover state : hover
+    클릭한(활성) 상태 active state : active
+    비활성 상태 Deactive state :focus
+    포커스상태  Focus state
+
+*/
+/*
+a:link,visited{
+    color: #333741;
+    text-decoration: none;
+}*/
+
+a[href]:hover{
+    color:#ff9900;
+    text-decoration: none;
+}
+
+/*블록 요소 내, 이미지 하단 공간 제거*/
+img{
+    vertical-align: bottom;
+}
+
+
+.asan_hospital{
+    text-align: right;
+    font-weight: 700;
+
+}
+.navi{
+    font-weight: 300;
+    line-height: 2.1rem;
+}
