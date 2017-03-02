@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+}
+
+.wrapper{
+    width:640px;
+    margin: 20px;
+}
+/*padding-top,padding-bottom은
+inline 요소에는 적용되지 않습니다
+간격이 벌어지지 않는다.
+마진탑,바텀, 보더탑,보더바텀도 마찬가지이다.
+*/
+
+.block-box,
+.inline-box{
+    padding: 20px;
+    width:200px;
+    height:200px;
+    background: #3fb5c8;
+    color: #fff;
+    margin:20px;
+    border:10px solid #84d6f5;
+}
+
+hr{
+    margin:20px 0;
+    border:0;
+    border-bottom: 1px solid #c1d6d1;
+}
+/*기본적으로는 인라인처럼 보이지만 블로거럼 레이아웃 설정이 가능하다.
+상하공간 설정 가능 너비 높이 설정 가능*/
+.inline-block-box{
+    display:inline-block;
+    background: #25a04d;
+    color: #ffd219;
+    height:200px;
+}
+.ghost-style-link{
+    display: inline-block;
+
+    margin: 20px;
+    border:1px solid currentColor;
+    padding:0.9375em 1.25em;
+
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color:#3fb5c8;
+    transition: all 0.4s ease-out;
+}
+
+.ghost-style-link:hover{
+    color:#fff;
+    background: #3fb5c8;
+    border-color:#3fb5c8;
+}
+.album-image{
+    border: 8px solid rgb(48, 162, 128);
+    padding:10px;
+    margin: 30px 0;
+    width:400px;
+    height:auto;
+    background: #fff;
+}
