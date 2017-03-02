@@ -1,0 +1,46 @@
+/*7강 css스타일*/
+@charset "UTF-8";
+
+html{
+    font-family: "spoqa han sans","san serif";
+    overflow-y: scroll;
+    /* 스크롤바 24px */
+    /* 모던 브라우저는 높이가 작을경우 스크롤바를 안보여주기때문이다.*/
+    
+}
+/*
+.v-hidden{
+    color:red;
+    visibility: hidden;
+}
+
+.hidden{
+    color:#fa8e00;
+    display: none;
+}*/
+
+.demo{
+    width: 500px;
+    height: 340px;
+    border:5px solid #ddd;
+
+    margin: 3em auto;
+    padding:1em;
+
+}
+
+.o-visible{
+    overflow: visible;
+}
+
+.o-auto{
+    overflow: auto;
+}
+
+.o-scroll{
+    overflow: scroll;
+}
+
+.o-hidden{
+    overflow: hidden;
+}

@@ -1,0 +1,48 @@
+/*7강 css스타일*/
+@charset "UTF-8";
+
+html{
+    font-family: "spoqa han sans","san serif";
+    font-size:10px;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.dropcap{
+    width:70%;
+}
+
+.dropcap::first-letter{
+    float:left;
+    margin-right: 10px;
+    color:red;
+    font-size:2.9rem;
+    line-height: 9.6rem;
+    font-weight: 900;
+    vertical-align: baseline;
+    margin-top:0;
+    padding: 0;
+    text-transform: uppercase;
+
+}
+
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+.container img{
+    margin-top: 9px;
+}
+.article {
+
+    line-height: 1.5;
+    font-family: helvetica, Arial, Verdana;
+}
+
+.article_media{
+    float: left;
+    margin-right: 20px;
+}
