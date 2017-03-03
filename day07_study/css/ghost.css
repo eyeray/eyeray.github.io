@@ -14,14 +14,11 @@ body{
     font-size:1.6rem;
     line-height: 1.5;/*줄간격 24px / 글자크기 16px*/
     color:#ffffff;
-    background:url("http://lorempixel.com/1920/1080/");
-
+    background:url("../images/space.jpg") 0 0 no-repeat;
+    background-size: cover;
 }
 .container{
     margin:0;
-    
-
-
 }
 
 .ghost_ex{
