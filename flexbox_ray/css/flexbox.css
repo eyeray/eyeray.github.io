@@ -1,0 +1,70 @@
+@charset "UTF-8";
+html{
+    font-size:10px;
+}
+body{
+    font-family: "Spoqa Han Sans", "Sans Serif";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #333741;
+    letter-spacing: -0.02em;
+}
+
+.container{
+    width: 65%;
+    margin: 0 auto;
+}
+p{
+    width:65%;
+    margin-left: 2%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 2.6rem;
+    letter-spacing: -0.05em;
+
+}
+p{
+    margin-bottom: 5.2rem;
+}
+
+h1,h2,h3,h4{
+    font-weight: 700;
+}
+
+h5,h6{
+    font-weight: normal;
+    line-height: 2.6rem;
+}
+h1{
+    font-size:5.463rem;
+    line-height: 6.3rem;
+}
+
+h2{
+    font-size:4.480966rem;
+    line-height: 6.3rem;
+}
+
+h3{
+    font-size:3.169rem;
+    line-height: 4.2rem;
+
+}
+
+h4{
+    font-size:2.598932rem;
+    line-height: 2.6rem;
+}
+
+h5{
+    color: #787f94;
+    font-size:1.838rem;
+    line-height: 2.6rem;
+}
+h6{
+    font-size:1.563rem;
+    color: #47494e;
+    line-height: 2.6rem;
+}

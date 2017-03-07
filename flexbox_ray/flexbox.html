@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex box > display:flex</title>
+    <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/flexbox.css">
+</head>
+
+<body>
+    <div class="container">
+        <article>
+            <section>
+                <h1>flexbox?</h1>
+                <p>
+                    스펙에 따르면 Flexbox 모델은 뷰포트및 엘리먼트의 크기가 동적이거나,
+                    알려지지 않은 경우에도 문서 내의 엘리먼트간에 공간을 배치,
+                    정렬및 분산하는 효율적인 방법을 제공한다.
+                </p>
+            </section>
+            <section>
+                <h2>Flex Box 모델을 사용하려면 어떻게 해야 할까?</h2>
+                <p>
+                    flex box는 부모요소에
+                    <code>display:flex; /* or display:inline-flex */</code>
+                    를 선언해서 사용할 수 있다.
+                    플렉스가 선언된 시점에서 요소는 플렉스 박스가 되고, 자식요소들은
+                    플렉스박스의 아이템이 된다.
+                    기본적으로 css 박스모델의 흐름은 위에서 아래 내려가는 수직 방향이다.
+
+                </p>
+            </section>
+            <section>
+                <h2>flex box의 6가지 속성</h2>
+                <p>
+                    플렉스박스에는 6개의 속성이 있다.
+                    flex-direction | flex-wrap | flex-flow | justify-content
+                    | align-items | align-content 가 있다.
+                </p>
+                <h3>1. flex-direction</h3>
+                <p>
+                    flex-direction은 플렉스 아이템들이 주축을 따라
+                    배치되는 방향을 제어한다. 속성값으로는 row | row-reverse | column | column-reverse 가 있고
+                    row-reverse 속성이 붙으면 justify-content의 순서가 reverse 되고
+                    column-reverse 속성이 붙으면 align-items의 순서가 reverse 된다.
+                    즉 주축의 방향에 따라 자식 요소 아이템 방향도 변한다.
+                </p>
+                <h3>2. flex-wrap</h3>
+                <p>flex-wrap은 기본값이 no-wrap이다.
+                   그래서 속성값을 지정하지 않으면 부모의 크기에 맞게 늘어나거나 줄어든다.
+                   flex-wrap은 모두 4가지의 속성값을 가지는데  wrap | no-wrap | wrap-reverse
+                   이다. wrap은 플렉스 컨테이너 내의 공간이, 플렉스 아이템을 기본 너비로 더 이상 포함할 수 없으면
+                   여러줄로 나뉘어진다.
+               </p>
+               <h3>3. flex-flow</h3>
+               <p>
+                   flex-flow는 flex-direction, flex-wrap의 약칭속성이다.
+                   <br>
+                   <code>ul{flex-flow:row wrap;}</code>
+                   <br>
+               </p>
+               <h3>4.justify-content</h3>
+               <p>
+                   이 속성은 주축에서 아이템들을 배치하는 방법을 정의한다. 위에도 말했지만 주축은 direction에
+                    변경 될 수 있다. 속성값으로는 5가지를 갖는다. 기본값는 flex-start
+                    flex-start | flex-end | center | space-around | space-between
+                    이다. flex-start 는 주축의 시작점, flex-end는 주축의 끝점, center는 주축의 가운데
+                    space-around는 각아이템 주위(아이템을 기준으로 하는 양쪽공간)에 동일한 공간을 갖게 하고,
+                    space-between은 각아이템 사이에 동일한 간격을 유지하게 한다.
+               </p>
+               <h3>5. align-items</h3>
+               <p>
+                   이 속성은 교차축에서 아이템들을 배치하는 방법을 정의한다.
+                   속성값으로는 다음 5가지를 갖는다. 기본값은 stretch이다.
+                   flex-start | flex-end | center | stretch | baseline
+                   이다. stretch는 전체 높이를 채울수 있도록 늘린다.
+                   flex-start는 교차축의 시작부분이다.
+                   flex-end는 교차축의 끝부분이다.
+                   center는 가운데이다.
+                   그렇다면 baseline은 예상한대로 font의 baseline에 맞춰서 정렬한다.
+
+               </p>
+               <h3>6. align-content</h3>
+               <p>
+                   wrap에서 속성을 다룰때 아이템들이 많으면 멀티라인 플렉스 컨테이너가 된다.
+                   align-content는 이 멀티라인을 조정하는 역할이다.
+                   기본값은 stretch이다. stretch를 사용하면, 플렉스 아이템은 교차 축을 따라 사용 가능한 공간에 맞게 "늘어난다(stretched)".
+                   flex-start | flex-end | center | stretch
+               </p>
+            </section>
+        </article>
+    </div>
+</body>
+
+</html>
