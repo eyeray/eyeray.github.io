@@ -10,9 +10,7 @@ body{
     line-height: 1.5;
 }
 
-.dropcap{
-    width:70%;
-}
+
 
 .dropcap::first-letter{
     float:left;
@@ -29,16 +27,14 @@ body{
 
 }
 
-
 .container{
-    width: 800px;
+    width: 65%;
     margin: 0 auto;
 }
 .container img{
     margin-top: 9px;
 }
 .article {
-
     line-height: 1.5;
     font-family: helvetica, Arial, Verdana;
 }
@@ -46,4 +42,13 @@ body{
 .article_media{
     float: left;
     margin-right: 20px;
+}
+.article_media_right{
+    float: right;
+    margin-left: 20px;
+}
+.container::after{
+    content: "";
+    clear:both;
+    display: block;
 }
