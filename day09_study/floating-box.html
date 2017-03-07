@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 4rem;
+
+        }
+        .box{
+            width:100px;
+            height:100px;
+            border:10px solid #eee;
+            text-align: center;
+            line-height: 100px;
+            text-transform: uppercase;
+        }
+
+        .red{
+            color:#fe4940;
+            border-color: currentColor;
+        }
+        .green{
+            color:#0abd32;
+            border-color: currentColor;
+            /*border-width:20px;*/
+        }
+        .blue{
+            color:#7283dd;
+            border-color: currentColor;
+        }
+
+        .fl{float: left;}
+        .fr{float:right;}
+        .clear{clear:both;}
+        .clearfix::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="red box fl">red</div>
+        <div class="green box fl">green</div>
+        <div class="blue box fl">blue</div>
+    </div>
+</body>
+</html>
