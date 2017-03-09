@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex-grow, flex-shrink, flex-basis</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        body{
+            font-size: 1.6rem;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            background: blue;
+
+
+        }
+        li{
+            flex:1 1 auto;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <article class="container">
+        <h1>flex-basis</h1>
+        <p>
+            flex-basis 속성은 플렉스 아이템의 너비로 기본값은 auto를 가진다.
+            일반적인 너비 속성에서 사용하는 모든 값을 취할 수 있다. percentage,em,rem,pixel등
+            만약 0으로 설정하려고 할 때에는 꼭 단위를 사용해야 한다는 것에 유의하자.
+        </p>
+        <ul>
+            <li>나는 심플한 리스트입니다.나는 정말 심플한 리스트에요</li>
+            <li>나는 두번째 요소에요.</li>
+        </ul>
+    </article>
+</body>
+</html>

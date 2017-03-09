@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>order | flexbox</title>
+    <style>
+        ul{
+            display: flex;
+            flex-direction:column;
+        }
+        #first{
+            order:4;
+        }
+        #second{
+            order:-55;
+        }
+        #third{
+            order:-1;
+        }
+
+    </style>
+</head>
+<body>
+    <article class="container">
+        <h1>order</h1>
+        <p>
+            플렉스 아이템의들은 기본적으로 order값을 0으로 가진다.
+            그래서 먼저 코딩된 순서로 표시된다. 소스파일의 위치값이 순서이다.
+            order 속성을 사용해서 속성값을 넣어주면 낮은값에서 높은값으로 표시된다.
+            음수값도 사용할 수 있다.
+        </p>
+        <ul>
+            <li id="first">아이템1</li>
+            <li id="second">아이템2</li>
+            <li id="third">아이템3</li>
+        </ul>
+    </article>
+
+</body>
+</html>
