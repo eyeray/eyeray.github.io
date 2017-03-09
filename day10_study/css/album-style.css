@@ -1,0 +1,60 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #666, #000 60%)
+}
+
+.album {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+
+}
+.album *{
+    position: absolute;
+
+
+}
+.album_disk {
+    width: 290px;
+    height: 290px;
+    right: 0;
+    transition: all 0.4s ease;
+}
+
+.album_vynil {
+    left: 275px;
+    top: 4px;
+    width: 34px;
+    height: 293px;
+}
+
+.album_cover {
+    border-radius: 2px;
+    width:287px;
+    height:287px;
+    box-shadow: 8px 8px 12px #000000;
+}
+.album_cover::before{
+    content:'';
+    border-left:287px solid rgba(255,255,255,0.5);
+}
+
+.album:hover>.album_disk{
+    right:-50px;
+}
+
+.album_disk.is-rotate{
+    animation:rotate-disk 10s infinite;
+}
+@keyframes rotate-disk {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
