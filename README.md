@@ -8,3 +8,5 @@
 
 [과제-170221:치아건강 페이지 &lt;서울아산병원](https://eyeray.github.io/day05_study/lecture/medicalview.html)
 <img src="https://github.com/eyeray/eyeray.github.io/blob/master/day05_study/lecture/images/result.jpg?raw=true" alt="치아건강 결과 페이지">
+
+[banner-layout: position](https://eyeray.github.io/banner/banner.html)
