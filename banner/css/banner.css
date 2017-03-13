@@ -1,0 +1,61 @@
+@charset "UTF-8";
+html{
+    font-size: 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family:"Spoqa Han Sans", "Sans Serif";
+    height: 100vh;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #666, #000 60%);
+}
+.banner{
+    width:800px;
+    height:300px;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin: auto;
+    background: url(../images/bg.jpg) 0 0 no-repeat;
+    overflow:hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.banner-apes{
+    position: absolute;
+    left:0;
+    top:169px;
+}
+.banner-golliras{
+    position:absolute;
+    left:11px;
+    top:111px;
+}
+.banner-kingkong{
+    position: absolute;
+    left:491px;
+    top:28px;
+}
+.banner-logo{
+    position: absolute;
+    left:19px;
+    top:18px;
+}
+.banner h1{
+    position: absolute;
+    left:125px;
+    top:32px;
+    color:white;
+    transform: skewX(-8deg);
+    font-size: 33px;
+    letter-spacing: 0.002em;
+    line-height:1.060606060606061;
+    width: 330px;
+    height:70px;
+    margin: 0;
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
