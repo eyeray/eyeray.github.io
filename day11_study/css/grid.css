@@ -1,0 +1,10 @@
+@charset "UTF-8";
+html{
+    font-family: "spoqa han sans","san serif";
+    font-size:10px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size:1.6rem;
+}
