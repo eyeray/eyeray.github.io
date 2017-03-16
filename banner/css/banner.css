@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html{
     font-size: 10px;
+    overflow: hidden;
 }
 body {
     margin: 0;
@@ -47,8 +48,8 @@ body {
 }
 .banner h1{
     position: absolute;
-    left:125px;
-    top:32px;
+    left:122px;
+    top:24px;
     color:white;
     transform: skewX(-8deg);
     font-size: 33px;
@@ -58,4 +59,70 @@ body {
     height:70px;
     margin: 0;
     text-shadow: 0 0 5px rgba(0,0,0,0.8);
+
+}
+/* animation */
+.kingkong-slideup{
+    animation:slideup 0.5s ease 0.7s backwards;
+
+}
+@keyframes slideup {
+    0%{top:300px;}
+    100%{top:28px;}
+
+}
+.apes-slide-right{
+    animation:slide-right 0.5s ease backwards;
+
+}
+@keyframes slide-right {
+    0%{left:800px;}
+    100%{left:0;}
+}
+.golliras-slide-left{
+    animation:slide-left 0.5s ease 0.3s backwards;
+}
+@keyframes slide-left {
+    0%{left:-500px;}
+    100%{left:11px;}
+}
+.logo-slide-down{
+    animation: slide-down 0.5s ease-out 0.8s backwards;
+}
+@keyframes slide-down {
+    0%{top:-100px;}
+    100%{top:18px;}
+
+}
+.title-scale-in{
+    animation:scale-in 0.5s ease-in 1s backwards;
+    z-index: 100;
+}
+@keyframes scale-in {
+    0%{
+        transform: scale(4,4) skewX(-8deg);
+        opacity: 0;
+    }
+    80%{transform: scale(0.9,0.9) skewX(-8deg);}
+    100%{
+        transform: scale(1,1) skewX(-8deg);
+        opacity: 1;
+    }
+}
+.banner-shake{
+    animation:shake 0.2s ease 1.4s backwards;
+}
+@keyframes shake {
+    0%{transform: translate(-2px,-2px);}
+    10%{transform: translate(2px,2px);}
+    20%{transform: translate(-2px,2px);}
+    30%{transform: translate(2px,-2px);}
+    40%{transform: translate(-2px,-2px);}
+    50%{transform: translate(2px,2px);}
+    60%{transform: translate(-2px,2px);}
+    70%{transform: translate(2px,-2px);}
+    80%{transform: translate(-2px,-2px);}
+    90%{transform: translate(2px,2px);}
+    100%{transform: translate(0px,0px);}
+
 }
