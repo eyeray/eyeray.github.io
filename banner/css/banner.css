@@ -63,7 +63,7 @@ body {
 }
 /* animation */
 .kingkong-slideup{
-    animation:slideup 0.5s ease 0.7s backwards;
+    animation: slideup 500ms ease 516.216ms backwards;
 
 }
 @keyframes slideup {
@@ -72,7 +72,7 @@ body {
 
 }
 .apes-slide-right{
-    animation:slide-right 0.5s ease backwards;
+    animation: slide-right 500ms ease 753.514ms backwards;
 
 }
 @keyframes slide-right {
@@ -80,14 +80,14 @@ body {
     100%{left:0;}
 }
 .golliras-slide-left{
-    animation:slide-left 0.5s ease 0.3s backwards;
+    animation: slide-left 500ms ease 18.1982ms backwards;
 }
 @keyframes slide-left {
     0%{left:-500px;}
     100%{left:11px;}
 }
 .logo-slide-down{
-    animation: slide-down 0.5s ease-out 0.8s backwards;
+    animation: slide-down 500ms ease-out 999.099ms backwards;
 }
 @keyframes slide-down {
     0%{top:-100px;}
@@ -95,7 +95,7 @@ body {
 
 }
 .title-scale-in{
-    animation:scale-in 0.5s ease-in 1s backwards;
+    animation: scale-in 496.937ms cubic-bezier(0.8, 0.02, 1, 1) 1003.06ms backwards;
     z-index: 100;
 }
 @keyframes scale-in {
